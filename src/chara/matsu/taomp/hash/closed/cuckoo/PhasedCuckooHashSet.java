@@ -1,4 +1,4 @@
-package concurrent;
+package chara.matsu.taomp.hash.closed.cuckoo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * from The Art of Multiprocessor Programming 13.4
  *
- * abstract class for concurrent cuckoo
+ * abstract class for chara.matsu.concurrent cuckoo
  */
 public abstract class PhasedCuckooHashSet<T> {
     protected volatile int         capacity;

@@ -1,4 +1,4 @@
-package concurrent;
+package chara.matsu.taomp.hash.closed.cuckoo;
 
 import java.util.ArrayList;
 import java.util.List;
