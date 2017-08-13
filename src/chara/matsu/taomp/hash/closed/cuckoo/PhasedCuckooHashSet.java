@@ -169,11 +169,13 @@ public abstract class PhasedCuckooHashSet<T> {
     }
 
     protected int hash0(T x) {
-        return (x.hashCode() % 9) % 8;
+        // x.hashCode % capacity
+        return x.hashCode();
     }
 
     protected int hash1(T x) {
-        return (x.hashCode() % 11) % 8;
+        // (x.hashCode / capacity) % capacity
+        return x.hashCode()/capacity;
     }
 
     protected abstract void acquire(T x);
