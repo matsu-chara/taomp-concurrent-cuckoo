@@ -5,6 +5,8 @@ import java.util.List;
 
 /**
  * from The Art of Multiprocessor Programming 13.4
+ *
+ * abstract class for concurrent cuckoo
  */
 public abstract class PhasedCuckooHashSet<T> {
     protected volatile int         capacity;

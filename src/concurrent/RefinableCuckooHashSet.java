@@ -7,6 +7,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * from The Art of Multiprocessor Programming 13.4
+ *
+ * refinable(lock granularity) implementation of PhaseCuckooHashSet
  */
 public class RefinableCuckooHashSet<T> extends PhasedCuckooHashSet<T> {
     private          AtomicMarkableReference<Thread> owner;

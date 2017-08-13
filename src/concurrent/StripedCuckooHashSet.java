@@ -7,6 +7,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * from The Art of Multiprocessor Programming 13.4
+ *
+ * lock striping implementation of PhaseCuckooHashSet
  */
 public class StripedCuckooHashSet<T> extends PhasedCuckooHashSet<T> {
     final ReentrantLock[][] lock;
