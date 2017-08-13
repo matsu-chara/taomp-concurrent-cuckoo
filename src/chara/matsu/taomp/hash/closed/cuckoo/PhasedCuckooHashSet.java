@@ -183,5 +183,4 @@ public abstract class PhasedCuckooHashSet<T> {
     protected abstract void release(T x);
 
     protected abstract void resize();
-
 }
